@@ -40,11 +40,11 @@ public class CardDeck {
 	 * Shuffle the cards that are left to deal.
 	 */
 	synchronized public void shuffle() {
-		System.out.println(String.format("shuffling with dealIndex: %d", dealIndex));
+		//System.out.println(String.format("shuffling with dealIndex: %d", dealIndex));
 		//iterate from the deal index through the highest index - 1 (count - 2)
 		for (int i = dealIndex; i < CARD_COUNT - 1; i++) {
 			int j = i + random.nextInt(CARD_COUNT - 1 - i) + 1;
-			System.out.println(String.format("swap %d with %d, (1-%d]", i, j, CARD_COUNT - 1 - i));
+			//System.out.println(String.format("swap %d with %d, (1-%d]", i, j, CARD_COUNT - 1 - i));
 			//swap i with random remaining index
 			Card temp = toDeal[i];
 			toDeal[i] = toDeal[j];
