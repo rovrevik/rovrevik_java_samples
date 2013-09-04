@@ -7,6 +7,7 @@ import com.ovrevik.algorithms.sorting.Sort;
 public class BubbleSort<T extends Comparable<? super T>> extends Sort<T> {
 	@Override
 	public void sort(T[] a) {
+		throw new UnsupportedOperationException("not impleemented yet");
 	}
 
 	public static void main(String[] args) {
